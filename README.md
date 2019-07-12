@@ -1,6 +1,6 @@
 # Replication code for "Macroeconomic conditions and opioid abuse"
 
-<img align="right" width="300" src="https://www.nber.org/aginghealth/2017no3/w23192.jpg">
+<img align="right" width="330" src="https://www.nber.org/aginghealth/2017no3/w23192.jpg">
 
 This repository contains code and data to replicate the results of:
 
