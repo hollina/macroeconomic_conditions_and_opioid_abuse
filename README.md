@@ -9,7 +9,7 @@ An earlier version of the paper was released as NBER Working Paper No. 23192, <h
 
 A non-technical summary of this paper is available via the 2017 NBER Bulletin on Aging and Health 2017, Number 3 at <https://www.nber.org/aginghealth/2017no3/w23192.shtml>. Source of image-->
 
-<img align="right" width="100" src="https://www.nber.org/aginghealth/2017no3/w23192.jpg">
+<img align="right" width="300" src="https://www.nber.org/aginghealth/2017no3/w23192.jpg">
 
 **Abstract**: We examine how deaths and emergency department (ED) visits related to use of opioid analgesics (opioids) and other drugs vary with macroeconomic conditions. As the county unemployment rate increases by one percentage point, the opioid death rate per 100,000 rises by 0.19 (3.6%) and the opioid overdose ED visit rate per 100,000 increases by 0.95 (7.0%). Macroeconomic shocks also increase the overall drug death rate, but this increase is driven by rising opioid deaths. Our findings hold when performing a state- level analysis, rather than county-level; are primarily driven by adverse events among whites; and are stable across time periods.
 
