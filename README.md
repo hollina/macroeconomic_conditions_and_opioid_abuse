@@ -8,9 +8,8 @@ Hollingsworth, A., Ruhm, C. J., & Simon, K. (2017). Macroeconomic Conditions and
 
 An earlier version of the paper was released as NBER Working Paper No. 23192, <https://www.nber.org/papers/w23192>.
 
-A non-technical summary of this paper is available via the 2017 NBER Bulletin on Aging and Health 2017, Number 3 at <https://www.nber.org/aginghealth/2017no3/w23192.shtml>. Source of image-->
-
-
+A non-technical summary of this paper is available via the 2017 NBER Bulletin on Aging and Health 2017, Number 3 at <https://www.nber.org/aginghealth/2017no3/w23192.shtml>. 
+Image source. 
 
 **Abstract**: We examine how deaths and emergency department (ED) visits related to use of opioid analgesics (opioids) and other drugs vary with macroeconomic conditions. As the county unemployment rate increases by one percentage point, the opioid death rate per 100,000 rises by 0.19 (3.6%) and the opioid overdose ED visit rate per 100,000 increases by 0.95 (7.0%). Macroeconomic shocks also increase the overall drug death rate, but this increase is driven by rising opioid deaths. Our findings hold when performing a state- level analysis, rather than county-level; are primarily driven by adverse events among whites; and are stable across time periods.
 
@@ -19,10 +18,14 @@ The entire project can be recreated by running:
 
 	~/do_files/0.master_script.do
 
+Intermediate images and latex tables are stored in the `~/results` folder. 
+
+Final output are displayed in `~/latex/tables_and_figures.pdf`, which is compiled using latex.
+ 
 The do files within  the directory `~/do_files/1.build_datasets_for_analysis` build the datasets used in the analysis. 
 The do files within`~/do_files/2.analysis/` reconstruct all figures and tables used in the paper and appendix.
 
-On lines 48 and 49 of 0.master_script.do, you will need to change your folder locations on your own machine, identifying the project folder path and the location of the restricted access data (not provided here). 
+On lines 48 and 49 of `0.master_script.do`, you will need to change your folder locations on your own machine, identifying the project folder path and the location of the restricted access data (not provided here). 
 
 Note that `$box` is a global macro I store in my profile.do. The profile.do is loaded each time stata is started and allows for one do file to be run across multiple machines with no additional editing. For example: 
 
@@ -55,7 +58,7 @@ The restricted access emergency department data can be obtained by submitting a 
 ## Software Used:
 All analysis were done on unix machines using Stata SE 14.2. We use a number of user-written packages that should be outlined in the `0.master_script.do` file. 
 
-Document compliation was done using Latex. 
+Document compliation was done using latex. 
 
 ## License:
 Replication Package (this github repo): [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
