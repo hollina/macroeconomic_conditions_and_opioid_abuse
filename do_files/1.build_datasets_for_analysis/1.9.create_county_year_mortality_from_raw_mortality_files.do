@@ -523,7 +523,7 @@ foreach i in opioid heroin popioid pheroin opioidw heroinw popioidw pheroinw opi
 
 foreach j in aopioid aheroin acomb {
 	forval i=1/100 {
-		ui replace `j'_version_`i'=0 if drug==0
+		qui replace `j'_version_`i'=0 if drug==0
 	}
 }
 
