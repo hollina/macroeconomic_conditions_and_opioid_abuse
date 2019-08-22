@@ -509,6 +509,15 @@ sort county year
 // Collapse at the county-year level
 collapse (sum) drug* opioid* heroin* popioid* pheroin* aopioid aopioidw aopioidb aopioidh aheroin aheroinw aheroinb aheroinh acomb acombw acombb acombh unonly *_version_*, by(county year) fast
 
+
+////////////////////////////////////////////////////////////////////////////////
+// Merge with the population data
+merge 1:1 county year using "$data_path/county_pop_age_race_1990_2014.dta"
+drop _merge
+
+// Drop if missing population
+drop if pop==.
+
 ////////////////////////////////////////////////////////////////////////////////
 // replace with zero rates if no drug deaths in county
 replace drug=0 if drug==.
@@ -545,13 +554,7 @@ forval i=1/100 {
 	qui replace acombh_version_`i'=0 if drug==0
 }
 
-////////////////////////////////////////////////////////////////////////////////
-// Merge with the population data
-merge 1:1 county year using "$data_path/county_pop_age_race_1990_2014.dta"
-drop _merge
 
-// Drop if missing population
-drop if pop==.
 
 ////////////////////////////////////////////////////////////////////////////////
 // Generate death rate per 100k for each group and drug type
